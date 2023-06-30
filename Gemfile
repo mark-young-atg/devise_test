@@ -71,7 +71,7 @@ group :test do
   gem "webdrivers"
 end
 
-gem "devise", "~> 4.9"
+gem 'devise', github: 'heartcombo/devise', branch: 'ca-fix-i18n-locale-failure-app'
 gem "devise-i18n"
 # gem 'devise_invitable'
 # gem 'devise_masquerade'

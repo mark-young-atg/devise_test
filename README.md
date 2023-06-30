@@ -1,7 +1,6 @@
 # README
 
-Minimal Rails app to demonstrate localisation problem discussed in
-this [PR](https://github.com/heartcombo/devise/pull/5567#issuecomment-1612579036)
+Minimal Rails app to demonstrate localisation of devise messages
 
 * The application has a default locale of :en
 * The application controller handles request in locale :de
@@ -9,12 +8,10 @@ this [PR](https://github.com/heartcombo/devise/pull/5567#issuecomment-1612579036
 
 After a user signs out devise redirects to the root page and
 after confirming there's no user session it displays the message
-'You need to sign in or sign up before continuing.'
+'You need to sign in or sign up before continuing.' using the
+German translation which is 'Sie müssen sich anmelden oder registrieren, bevor Sie fortfahren können.'
 
-I would like to see this message localised to match the locale
-used by the user who signed out.
-
-### Steps to reproduce
+### Steps to demonstrate
 
 * Pull down this repo, run bundle, run migrations, start the rails application and load the homepage
 * Use the `Sign Up` link to create a user
